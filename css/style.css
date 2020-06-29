@@ -1,0 +1,488 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat";
+    box-sizing: border-box;
+}
+
+/* Padrões */
+
+.clear {
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: inherit;
+}
+
+/* CSS Common */
+
+/* Header */
+
+header {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header label, header input {
+    float: right;
+    display: none;
+}
+
+header ul {
+    float: right;
+    height: 100%;
+}
+
+header ul li {
+    float: right;
+    list-style-type: none;
+    height: 100%;
+}
+
+header ul li a {
+    color: #b4b4b4;
+    text-decoration: none;
+    padding: 18px;
+}
+
+header ul li a:hover {
+    background-color: #d6d6d6;
+    color: #777777;
+}
+
+/* Section Gallery */
+
+.gallery {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gallery > div {
+    background-color: #ccc;
+    width: calc(100% / 6);
+    border: 5px solid white;;
+}
+
+.gallery div div {
+    padding-top: 100%;
+}
+
+/* 3 Lorem */
+
+.g-text {
+    max-width: 800px;
+    height: auto;
+    margin: 0 auto;
+    color: white;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 12px;
+    position: relative;
+    top: -5px;
+}
+
+.g-text div.float {
+    float: left;
+}
+
+.g-text h2 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.g-text .primary {
+    width: 40%;
+    background-color: #688293;
+    padding: 70px;
+    position: relative;
+    top: -28px;
+}
+
+.g-text .secondary {
+    width: 30%;
+    background-color: #576975;
+    padding: 30px;
+}
+
+.g-text .secondary img {
+    position: relative;
+    top: 20px;
+}
+
+/* Perfil */
+
+section.perfil {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+section.perfil .perfil-wraper {
+    width: 40%;
+}
+
+section.perfil .perfil-wraper > div {
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/img_perfil.png");
+    background-size: cover;
+    background-position: center;
+}
+
+section.perfil .text {
+    width: 60%;
+    font-size: 14px;
+    padding: 30px;
+}
+
+section.perfil .text h2 {
+    font-size: 18px;
+    color: #698293;
+    margin-bottom: 15px; 
+}
+
+/* Video Section */
+
+section.videos {
+    max-width: 1400px;
+    margin: 50px auto;
+}
+
+section.videos div.float {
+    float: left;
+    width: calc(100% / 3 - 15px);
+    margin: 6px;
+    padding-top: 20%;
+    position: relative;
+}
+
+section.videos iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0 6px;
+}
+
+/* Treatments Section */
+
+section.treatments {
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #b4b4b4;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+section.treatments > h2 {
+    color: #698293 !important;
+    width: 100%;
+    text-align: center;
+    margin: 80px 0;
+}
+
+section.treatments h2{
+    color: #737373;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+section.treatments .t-text{
+    padding: 0 25px;
+    width: calc(100% / 3);
+    min-width: 175px;
+    margin-bottom: 50px;
+}
+
+/* Testimonial Section */
+
+section.testimonial {
+    height: 200px;
+    width: 400px;
+    margin: 25px auto;
+    font-size: 14px;
+    color: #b4b4b4;
+    text-align: center;
+}
+
+section.testimonial h2 {
+    color: #698293;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+section.testimonial span {
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+section.testimonial .persona {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Social Section */
+
+article.insta {
+    width: 100%;
+    background-color: #98a5ae;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+article.insta p:nth-of-type(1) {
+    margin: 15px 0;
+}
+
+div.gallery-2 {
+    width: 100%;
+    display: flex;
+}
+
+div.gallery-2 div {
+    display: flex;
+    width: calc(100% / 3);
+}
+
+div.gallery-2 div div {
+    background-color: rgb(210,210,210);
+    width: calc(100% / 3);
+    padding-top: 35%;
+    border: 5px solid white;
+}
+
+article.face {
+    width: 100%;
+    background-color: #576975;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+article.face p:nth-of-type(1) {
+    margin: 15px 0;
+}
+
+/* Form Section */
+
+section.contato {
+    width: 100%;
+}
+
+section.contato h2 {
+    font-size: 18px;
+    color: #698293;
+    font-weight: bolder;
+    width: 100%;
+    text-align: center;
+    padding: 60px 0;
+}
+
+section.contato form {
+    max-width: 600px;
+    padding: 0 25px;
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+section.contato form div {
+    margin-bottom: 20px;
+    float: left;
+}
+
+section.contato label {
+    color: #b4b4b4;
+    font-size: 15px;
+}
+
+section.contato form div input {
+    height: 40px;
+    border: 1px solid #dadada;
+}
+
+section.contato form div textarea {
+    resize: none;
+    border: 1px solid #dadada;
+}
+
+section.contato form div.w100 {
+    width: 100%;
+}
+
+section.contato form div input, section.contato form div.w100 textarea {
+    width: 100%;
+    margin-top: 10px;
+}
+
+section.contato form div.w50 {
+    width: 50%;
+}
+
+section.contato form button {
+    padding: 10px 25px;
+    color: white;
+    background-color: #688293;
+    border: 0;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    color: white;
+    background-color: #688293;
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer article {
+    font-size: 14px;
+}
+
+footer article h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1050px) {
+    section.videos div.float {
+        float: none;
+        width: 70%;
+        padding-top: 40%;
+        margin: 25px auto;
+    }
+
+    div.gallery-2 div {
+        width: calc(100% / 2);
+    }
+
+    div.gallery-2 > div:nth-of-type(3) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header ul {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        left: -110%;
+        transition: all .4s;
+    }
+
+    header ul li a {
+        padding: 20px 10px;
+    }
+
+    header ul li a:hover {
+        color: #626262;
+        background-color: initial;
+    }
+
+    header label {
+        display: initial;
+        cursor: pointer;
+    }
+
+    header label img {
+        height: 30px;
+    }
+
+    div.gallery-2 div {
+        width: 100%;
+    }
+
+    div.gallery-2 > div:nth-of-type(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    .g-text {
+        top: -20px;
+    }
+
+    .g-text div.float {
+        float: none;
+        margin: 0 auto;
+    }
+
+    .g-text .secondary {
+        width: 60%;
+    }
+
+    .g-text .primary {
+        top: 0;
+        width: 80%;
+    }
+
+    section.perfil {
+        flex-direction: column;
+    }
+
+    section.perfil .perfil-wraper {
+        width: 100%;
+        padding-top: 70%;
+        position: relative;
+    }
+
+    section.perfil .perfil-wraper > div {
+        width: 60%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    section.perfil .text {
+        width: 100%;
+    }
+
+    section.videos div.float {
+        width: 95%;
+        padding-top: 55%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    footer article {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 530px) {
+    section.contato form div.w50 {
+        width: 100%;
+    }
+
+    #styled {
+        padding-right: 0 !important;
+    }
+}
